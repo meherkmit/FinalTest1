@@ -1,0 +1,2 @@
+serviceClass: can.can.Final.client.GreetingService
+path: F0FC28E94526B56ABA60127D88EAF65C.gwt.rpc

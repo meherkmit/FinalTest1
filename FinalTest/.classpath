@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/google/gdata/client/media/|com/google/gdata/client/uploader/" kind="src" path="src"/>
+	<classpathentry kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="con" path="com.google.appengine.eclipse.core.GAE_CONTAINER"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/GGWeb/gwt-oauth2-0.2-alpha.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/gdata-client-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/gdata-client-meta-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/gdata-core-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/gdata-docs-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/gdata-docs-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/gdata-maps-2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/gdata-maps-meta-2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/gdata-media-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/gdata-spreadsheet-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/gdata-spreadsheet-meta-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/google-collect-1.0-rc1.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/mail.jar"/>
+	<classpathentry kind="lib" path="C:/Documents and Settings/Meher/Desktop/work mail/mail3/Include these jars/servlet-api-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/GGWeb/commons-fileupload-1.2.2/lib/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/GGWeb/commons-io-2.2.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
