@@ -1,1 +1,3 @@
-FinalTest is a GWT project.
+FinalTest is a GWT project aimed to implement GWT + OAuth2 + File Upload to Google Docs.
+
+Please note that the file is hardcoded for now.
