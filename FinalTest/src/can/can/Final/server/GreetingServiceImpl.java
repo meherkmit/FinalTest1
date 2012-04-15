@@ -1,11 +1,22 @@
 package can.can.Final.server;
 
+
 import java.io.File;
+import java.io.PrintWriter;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.channels.Channels;
+
+import org.apache.commons.io.FileUtils;
 
 import can.can.Final.client.GreetingService;
+
+import com.google.appengine.api.files.AppEngineFile;
+import com.google.appengine.api.files.FileService;
+import com.google.appengine.api.files.FileServiceFactory;
+import com.google.appengine.api.files.FileWriteChannel;
 
 import com.google.gdata.client.docs.DocsService;
 import com.google.gdata.data.PlainTextConstruct;
@@ -33,9 +44,10 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
         try {
          
          //Hard coding the file to be uploaded.
-	     File f =new File("D:/GGWeb/FinalTest/war/Sunset.jpg");
-	     
-	     
+	     //File f= new File("");
+        	File f= new File("demo.txt");   	
+        	
+        	
 	     //FirstItemImple class that implements an interface org.apache.commons.fileupload.FileItem. 
 	     FileItemImpl file= new FileItemImpl(f);
 	     
@@ -58,10 +70,10 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
             
             //Sets the default wait timeout (in milliseconds) for a connection to the remote GData service
             client.setConnectTimeout(0);
-            System.out.println("b4: "+client.getContentType().getMediaType()); 
+            //System.out.println("b4: "+client.getContentType().getMediaType()); 
             //setting the DocsService content type to render http request and response. 
-            //client.setContentType(new ContentType("text/html"));
-            //System.out.println("after: "+client.getContentType().getMediaType());
+            client.setContentType(new ContentType("text/html"));
+            System.out.println("after: "+client.getContentType().getMediaType());
             //insert's the entry to google docs
             client.insert(new URL(DOCUMENT_URL),newDocument);
 
@@ -76,8 +88,9 @@ public class GreetingServiceImpl extends RemoteServiceServlet implements
         	result="IOException";
         } catch (ServiceException e) {
             e.printStackTrace();
+           
         	System.out.println("ServiceException");
-        	result="ServiceException";
+        	result=e.getMessage();//"ServiceException";
         }
    	 	       
 		return result;
